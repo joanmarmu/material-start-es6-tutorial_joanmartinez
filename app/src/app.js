@@ -5,12 +5,15 @@ import 'angular-animate';
 import 'angular-aria';
 import 'angular-material';
 
-import AppController from 'src/AppController';
-import Users from 'src/users/Users';
+export default angular.module( 'starter-app', [ 'ngMaterial' ] )
+  .run(() => {
+    console.log(`Starting the 'starter-app' module`);
+  });
 
+/*
 export default angular.module( 'starter-app', [ 'ngMaterial', Users.name ] )
   .config(($mdIconProvider, $mdThemingProvider) => {
-    // Register the user `avatar` icons
+    //Register the user `avatar` icons
     $mdIconProvider
       .defaultIconSet("./assets/svg/avatars.svg", 128)
       .icon("menu", "./assets/svg/menu.svg", 24)
@@ -25,3 +28,4 @@ export default angular.module( 'starter-app', [ 'ngMaterial', Users.name ] )
       .accentPalette('red');
   })
   .controller('AppController', AppController);
+*/
