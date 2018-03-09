@@ -18,7 +18,7 @@ function AppController(UsersDataService, $mdSidenav) {
         .loadAllUsers()
         .then( function( users ) {
           self.users    = [].concat(users);
-          self.selected = users[0];
+          self.selected = users[6];
         });
 
   // *********************************
